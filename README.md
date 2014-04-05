@@ -73,3 +73,16 @@ In the case of private interfaces this rule applies to the space between the blo
 
 @end
 ~~~
+
+For long methods, break them on each argument and indent to match ":"
+
+
+~~~objective-c
+- (NSString *)changeString:(NSString *)string
+                   toMatch:(NSString *)pattern
+                  animated:(BOOL)animated;
+
+- (void)          simple:(BOOL)firstArg
+    withMuchLongerSecond:(NSString *)secondArg
+       andThirdArguments:(id)thirdArg;
+~~~
